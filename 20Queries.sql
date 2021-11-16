@@ -62,6 +62,8 @@ from `person`, `issnaf_profile`
 where `person`.profile_id = `issnaf_profile`.profile_id
 order by person_id;
 
+-- Update Log In Info
+UPDATE account SET password ='$password' WHERE user_name = '$username';
 
 
 
