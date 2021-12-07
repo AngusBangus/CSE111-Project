@@ -1,7 +1,7 @@
 <?php
     function request($username, $password) {
 
-        $dbServerName = 'localhost:3308'; //specify the port number 3307 where the phpmyadmin listen to
+        $dbServerName = 'localhost:3306'; //specify the port number 3307 where the phpmyadmin listen to
         $user = 'root';
         $pass = '';
         $db = 'testbd';

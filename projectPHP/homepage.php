@@ -117,11 +117,11 @@ body {
   <a class="active" href="fill.php">Admin</a>
   <a href="change.php">Change Password</a>
   <a href="fulfill.php">View Forgot Password Request</a>
-  <a href="member.php">Add a New Member</a>
+  <a href="member.php">Add a New Member (IN PROGRESS)</a>
   <a href="org.php">Add Organization to table</a>
-  <a href="manorg.php">Manage Organization data</a>
-  <a href="manmem.php">Manage Member data</a>
-  <a href="export.php">Export data</a>
+  <a href="manorg.php">Manage Organization data(IN PROGRESS)</a>
+  <a href="manmem.php">Manage Member data(NOT IMPLEMENTED)</a>
+  <a href="export.php">Export data(NOT IMPLEMENTED)</a>
   <div class="search-container">
     <form method = "post">
       <input type="text" placeholder="Search.." name="search">
