@@ -18,7 +18,7 @@ EOF;
 include 'connect.php';
             $result = $conn->query($sql);
                 while ($row = $result->fetch_assoc()) {  
-                    if ($row['user_type']=='Admin'& $row['password']==$password) {
+                    if ($row['user_type']=='1'& $row['password']==$password) {
                         echo "Admin detected 5\n";
                         session_start();
                         $name = $row['user_name'];
@@ -27,7 +27,7 @@ include 'connect.php';
                         header("Location: homepage.php"); //send to homepage
                         return $row;
                     }
-                    elseif($row['user_type']=='Viewer'& $row['password']==$password){
+                    elseif($row['user_type']=='0'& $row['password']==$password){
                         echo "Viewer detected 5\n";
                         session_start();
                         $name = $row['user_name'];
