@@ -431,7 +431,7 @@ if(isset($_POST["submit"])){
             echo"<TH>". $row['primary_phone']. "</TH>";
             echo"<TH>". $row['birthdate']. "</TH>";
             echo"<TH>". $row['gender']. "</TH>";
-            echo"<TH>". $row['iamge_url']. "</TH>";
+            echo"<TH>". $row['image_url']. "</TH>";
             echo"<TH>". $row['na_arrival']. "</TH>";
             echo"<TH>". $row['na_departure']. "</TH>";
             echo"<TH>". $row['linkedin_page']. "</TH>";
@@ -441,7 +441,7 @@ if(isset($_POST["submit"])){
             echo"<TH>". $row['li_description']. "</TH>";
             echo"<TH>". $row['discipline_id']. "</TH>";
             echo"<TH>". $row['profile_id']. "</TH>";
-            echo"<TH>". $row['disapora_id']. "</TH>";
+            echo"<TH>". $row['diaspora_id']. "</TH>";
             echo"<TH>". $row['linkedin_timestamp']. "</TH>";
             
             
