@@ -151,7 +151,7 @@ if(isset($_POST["submit"])){
   <p>Click on the table name to expand information</p>
 </div>
 
-<h1 style="text-align:left;float:left;">Admin Viewer</h1> 
+<h1 style="text-align:left;float:left;"> Viewer</h1> 
     <?php
     session_start();
     $name = $_SESSION["name"];
