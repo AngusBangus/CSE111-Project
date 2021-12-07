@@ -119,7 +119,7 @@ body {
   <a href="fulfill.php">View Forgot Password Request</a>
   <a href="member.php">Add a New Member (IN PROGRESS)</a>
   <a href="org.php">Add Organization to table</a>
-  <a href="manorg.php">Manage Organization data(IN PROGRESS)</a>
+  <a href="manorg.php">Manage Organization data</a>
   <a href="manmem.php">Manage Member data(NOT IMPLEMENTED)</a>
   <a href="export.php">Export data(NOT IMPLEMENTED)</a>
   <div class="search-container">
@@ -258,7 +258,7 @@ if(isset($_POST["submit"])){
 <title>ISSNAF30 HomePage</title>
 
 <div style="text-align:center">
-  <h2>ISSNAF Databse</h2>
+  <h2>Jack Nicholson Fanclub Member Databse</h2>
   <p>Click on the table name to expand information</p>
 </div>
 

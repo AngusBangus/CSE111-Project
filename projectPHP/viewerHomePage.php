@@ -256,7 +256,7 @@ if(isset($_POST["submit"])){
 <title>ISSNAF30 HomePage</title>
 
 <div style="text-align:center">
-  <h2>ISSNAF Databse</h2>
+  <h2>Jack Nicholson Fanclub Member Databse</h2>
   <p>Click on the table name to expand information</p>
 </div>
 

@@ -41,7 +41,6 @@ th {text-align: left;}
 <?php
 $q = ($_GET['q']);
 
-session_start();
 $_SESSION['q'] = $q;
 
 require_once("connect.php");

@@ -8,7 +8,7 @@
     <img src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwNjQyMzcyMTEw/jack-nicholson-9423081-1-402.jpg" alt="Italian Org" width="300" >
   
     <h1>Login</h1>
-    
+    <h1>Jack Nicholson Fanclub Member Database</h1>
     <div></div>
     <form action="login.php" method="get">
         <label>Username:</label>
