@@ -132,12 +132,121 @@ body {
 include 'connect.php';
 if(isset($_POST["submit"])){
   $Key = $_POST["search"];
-  $sql = "SELECT * FROM `chapter` WHERE `chapter_name` LIKE '%$Key%'";
+  $sql = "SELECT * FROM `chapter` WHERE `chapter_name` LIKE '%$Key%'
+  UNION 
+  SELECT * FROM `chapter` WHERE `chapter_id` LIKE '%$Key%' ";
   $result = $conn->query($sql);
   while ($row = $result->fetch_assoc()) {  
     
     echo "<p>".$row['chapter_id']."</p>";
     echo "<p>".$row['chapter_name']."</p>";
+    
+       
+   }
+  
+}
+?>
+<?php
+include 'connect.php';
+if(isset($_POST["submit"])){
+  $Key = $_POST["search"];
+  $sql = "SELECT * FROM `location` WHERE `city` LIKE '%$Key%'
+  UNION
+  SELECT * FROM `location` WHERE `location_id` LIKE '%$Key%'
+  UNION
+  SELECT * FROM `location` WHERE `state` LIKE '%$Key%'
+  UNION
+  SELECT * FROM `location` WHERE `zip_code` LIKE '%$Key%'
+  UNION
+  SELECT * FROM `location` WHERE `country` LIKE '%$Key%'
+  ";
+ 
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {  
+    
+    echo "<p>".$row['location_id']." ".$row['city']." ".$row['state']." ".$row['zip_code']." ".$row['country']."</p>";
+   
+    
+       
+   }
+  
+}
+?>
+<?php
+include 'connect.php';
+if(isset($_POST["submit"])){
+  $Key = $_POST["search"];
+  $sql = "SELECT * FROM `discipline` WHERE `discipline_full_name` LIKE '%$Key%'
+  UNION 
+  SELECT * FROM `discipline` WHERE `discipline_id` LIKE '%$Key%' ";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {  
+    
+    echo "<p>".$row['discipline_id']." ".$row['discipline_full_name']."</p>";
+    
+       
+   }
+  
+}
+?>
+
+<?php
+include 'connect.php';
+if(isset($_POST["submit"])){
+  $Key = $_POST["search"];
+  $sql = "SELECT * FROM `job` WHERE `institute` LIKE '%$Key%'
+  UNION 
+  SELECT * FROM `job` WHERE `department` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `job` WHERE `job_title` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `job` WHERE `job_normalized_title` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `job` WHERE `job_email` LIKE '%$Key%'";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {  
+    
+    echo "<p>".$row['job_normalized_title']." ".$row['institute']." ".$row['department']." ".$row['job_email']."</p>";
+    
+       
+   }
+  
+}
+?>
+<?php
+include 'connect.php';
+if(isset($_POST["submit"])){
+  $Key = $_POST["search"];
+  $sql = "SELECT * FROM `organization` WHERE `organization_name` LIKE '%$Key%'
+  UNION 
+  SELECT * FROM `organization` WHERE `organization_type` LIKE '%$Key%' ";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {  
+    
+    echo "<p>".$row['organization_id']." ".$row['organization_name']." ".$row['organization_type']."</p>";
+    
+       
+   }
+  
+}
+?>
+<?php
+include 'connect.php';
+if(isset($_POST["submit"])){
+  $Key = $_POST["search"];
+  $sql = "SELECT * FROM `person` WHERE `full_name` LIKE '%$Key%'
+  UNION 
+  SELECT * FROM `person` WHERE `primary_email` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `person` WHERE `primary_phone` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `person` WHERE `birthdate` LIKE '%$Key%' 
+  UNION
+  SELECT * FROM `person` WHERE `specialty_name` LIKE '%$Key%'";
+  $result = $conn->query($sql);
+  while ($row = $result->fetch_assoc()) {  
+    
+    echo "<p>".$row['person_id']." ".$row['full_name']." ".$row['primary_email']." ".$row['primary_phone']." ".$row['birthdate']." ".$row['gender']." ".$row['specialty_name']."</p>";
     
        
    }
